@@ -41,14 +41,14 @@
 
 <div class="modal-footer">
   <div class="col-xs-12 text-right">
-    <button class="btn btn-link" ng-click="close()" ng-if="loadingState !== 'DONE'">
+    <button class="btn btn-link modal-close" ng-click="close()" ng-if="loadingState !== 'DONE'">
       {{ 'TELEMETRY_CANCEL' | translate }}
     </button>
 
     <button class="btn btn-primary" ng-click="save()" ng-if="loadingState !== 'DONE'" ng-disabled="loadingState === 'LOADING'">
       {{ 'TELEMETRY_SAVE' | translate }}
     </button>
-    <button class="btn btn-primary modal-close" ng-click="close()" ng-if="loadingState === 'DONE'">
+    <button class="btn btn-primary" ng-click="close()" ng-if="loadingState === 'DONE'">
       {{ 'CLOSE' | translate }}
     </button>
   </div>
