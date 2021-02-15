@@ -48,7 +48,7 @@
     <button class="btn btn-primary" ng-click="save()" ng-if="loadingState !== 'DONE'" ng-disabled="loadingState === 'LOADING'">
       {{ 'TELEMETRY_SAVE' | translate }}
     </button>
-    <button class="btn btn-primary" ng-click="close()" ng-if="loadingState === 'DONE'">
+    <button class="btn btn-primary modal-close" ng-click="close()" ng-if="loadingState === 'DONE'">
       {{ 'CLOSE' | translate }}
     </button>
   </div>
